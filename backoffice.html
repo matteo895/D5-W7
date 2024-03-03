@@ -12,99 +12,83 @@
     />
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand" href="#">INFORMATICANDO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+  <body class="bg-secondary">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container mb-2 mt-2">
+        <a
+          class="navbar-brand font-weight-bold fs-2 text-info"
+          href="homepage.html"
+          >INFORMATICANDO</a
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/homepage.html"
-                >Home</a
+              <a
+                class="nav-link text-primary fs-5"
+                aria-current="page"
+                href="/homepage.html"
+                >HOME</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./backoffice.html">Backoffice</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-lg-7">
-          <h1 class="mt-5 mb-3 display-5 d-inline-block">Backoffice</h1>
-          <h5 class="d-inline-block" id="title-alt"></h5>
+          <h2 class="mt-5">Backoffice</h2>
           <form id="form">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nome</label>
+            <div class="mt-5">
+              <label for="name" class="form-label fs-5">NOME</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control border-warning border-3 shadow"
                 id="name"
-                placeholder="nome"
+                placeholder="Inserisci nome"
                 required
               />
             </div>
-            <div class="mb-3">
-              <label for="description" class="form-label">Descrizione</label>
+            <div class="mt-5">
+              <label for="description" class="form-label fs-5"
+                >DESCRIZIONE</label
+              >
               <textarea
                 type="text"
-                class="form-control"
+                class="form-control border-warning border-3 shadow"
                 id="description"
                 placeholder="Inserisci una descrizione"
                 rows="6"
                 required
               ></textarea>
             </div>
-            <div class="mb-3">
-              <label for="brand" class="form-label">Brand</label>
+            <div class="mt-5 mb-5">
+              <label for="brand" class="form-label fs-5">BRAND</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control border-warning border-3 shadow"
                 id="brand"
-                placeholder="BRAND"
+                placeholder="Inserisci un brand"
                 required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="img" class="form-label">Img</label>
-              <input
-                type="text"
-                class="form-control"
-                id="img"
-                placeholder="#"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="price" class="form-label">Prezzo</label>
-              <input
-                type="number"
-                class="form-control"
-                id="price"
-                placeholder="1€"
               />
             </div>
 
             <div class="d-flex justify-content-between">
-              <button type="submit" class="btn">save</button>
+              <button
+                type="button"
+                class="btn btn-success shadow-lg btn-md show-details font-weight-bold"
+              >
+                SAVE
+              </button>
               <button
                 id="deleteBtn"
-                type="button"
-                class="btn btn-danger"
-                style="line-height: 0"
+                type="button "
+                class="btn btn-danger shadow-lg"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

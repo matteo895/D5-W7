@@ -1,4 +1,5 @@
 const url = "https://striveschool-api.herokuapp.com/api/product/";
+
 fetch(URL, {});
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,12 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const discoverButtons = document.querySelectorAll(".discover-button");
+  const showDetailsButtons = document.querySelectorAll(".show-details");
 
-  discoverButtons.forEach((button) => {
+  showDetailsButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      // Qui inserisci il codice per reindirizzare l'utente alla pagina desiderata
-      window.location.replace("/info.html");
+      const card = button.closest(".card");
+      const image = card.querySelector("img");
+      const product = card.querySelector(".card-title").textContent;
+
+      localStorage.setItem("selectedProduct", product);
+      window.location.href = "info.html";
     });
   });
 });

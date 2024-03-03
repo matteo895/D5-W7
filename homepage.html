@@ -11,46 +11,50 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand" href="#">INFORMATICANDO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+  <body class="bg-secondary">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container mb-2 mt-2">
+        <a
+          class="navbar-brand font-weight-bold fs-2 text-info"
+          href="homepage.html"
+          >INFORMATICANDO</a
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/homepage.html"
-                >Home</a
+              <a
+                class="nav-link text-primary fs-5 font-weight-bold"
+                aria-current="page"
+                href="/homepage.html"
+                >EXPLORE</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./backoffice.html">Backoffice</a>
+              <a
+                class="nav-link active text-danger fs-5 font-weight-bold"
+                href="./backoffice.html"
+                >BACK-OFFICE</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
       <div class="container">
-        <div class="row g-3" id="card">
+        <div class="row g-3 mb-5" id="card">
           <!-- Prima Card -->
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+            <div class="card mb-4 shadow-lg border-info border-3">
               <img
-                src="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-original-src="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src1="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-alternative-src2="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
+                src="/img/iPhone_15_Black_Pure_Back_iPhone_15_Black_Pure_Front_2up_Screen__WWEN.webp"
+                data-original-src="/img/iPhone_15_Black_Pure_Back_iPhone_15_Black_Pure_Front_2up_Screen__WWEN.webp"
+                data-alternative-src1="/img/iPhone_15_Blue_Pure_Back_iPhone_15_Blue_Pure_Front_2up_Screen__WWEN_600x.webp"
+                data-alternative-src2="/img/iPhone_15_Yellow_Pure_Back_iPhone_15_Yellow_Pure_Front_2up_Screen__WWEN_600x.webp"
                 class="bd-placeholder-img card-img-top"
               />
               <div class="card-body">
@@ -60,77 +64,31 @@
                   sviluppati da apple
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning shadow-lg modify-button"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="iphone 15"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Seconda Card -->
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+            <div class="card mb-4 shadow-lg border-info border-3">
               <img
-                src="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-original-src="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-alternative-src1="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src2="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
-                class="bd-placeholder-img card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">SAMSUNG S24</h5>
-                <p class="card-text">
-                  samsung s24 è uno dei modelli di smartphone più recenti
-                  sviluppati da samsung
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Terza Card -->
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img
-                src="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
-                data-original-src="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
-                data-alternative-src1="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src2="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
+                src="/img/wp-1698228571476.webp"
+                data-original-src="/img/wp-1698228571476.webp"
+                data-alternative-src1="/img/6839827815.jpg"
+                data-alternative-src2="/img/wp-1698228511086.webp"
                 class="bd-placeholder-img card-img-top"
               />
               <div class="card-body">
@@ -140,82 +98,31 @@
                   sviluppati da xiaomi
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning shadow-lg modify-button"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="xiaomi 14"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="row g-3" id="card">
-          <!-- Prima Card -->
+          <!-- Terza Card -->
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+            <div class="card mb-4 shadow-lg border-info border-3">
               <img
-                src="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-original-src="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src1="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-alternative-src2="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
-                class="bd-placeholder-img card-img-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">IPHONE 15</h5>
-                <p class="card-text">
-                  iphone 15 è uno dei modelli di smartphone più recenti
-                  sviluppati da apple
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Seconda Card -->
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img
-                src="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-original-src="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-alternative-src1="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src2="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
+                src="/img/s24 yellow.jpg"
+                data-original-src="/img/s24 yellow.jpg"
+                data-alternative-src1="/img/s24 plus black.jpg"
+                data-alternative-src2="/img/s24 plus 512gb lavender.jpg"
                 class="bd-placeholder-img card-img-top"
               />
               <div class="card-body">
@@ -225,66 +132,126 @@
                   sviluppati da samsung
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning modify-button shadow-lg"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="samsung s24"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row g-3 mb-5" id="card">
+          <!-- Prima Card -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-lg border-info border-3">
+              <img
+                src="/img/s24 plus 512gb lavender.jpg"
+                data-original-src="/img/s24 plus 512gb lavender.jpg"
+                data-alternative-src1="/img/s24 yellow.jpg"
+                data-alternative-src2="/img/s24 plus black.jpg"
+                class="bd-placeholder-img card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">SAMSUNG S24</h5>
+                <p class="card-text">
+                  samsung s24 è uno dei modelli di smartphone più recenti
+                  sviluppati da samsung
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning modify-button shadow-lg"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="samsung s24"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Seconda Card -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-lg border-info border-3">
+              <img
+                src="/img/iPhone_15_Blue_Pure_Back_iPhone_15_Blue_Pure_Front_2up_Screen__WWEN_600x.webp"
+                data-original-src="/img/iPhone_15_Blue_Pure_Back_iPhone_15_Blue_Pure_Front_2up_Screen__WWEN_600x.webp"
+                data-alternative-src1="/img/iPhone_15_Black_Pure_Back_iPhone_15_Black_Pure_Front_2up_Screen__WWEN.webp"
+                data-alternative-src2="/img/iPhone_15_Yellow_Pure_Back_iPhone_15_Yellow_Pure_Front_2up_Screen__WWEN_600x.webp"
+                class="bd-placeholder-img card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">IPHONE 15</h5>
+                <p class="card-text">
+                  iphone 15 è uno dei modelli di smartphone più recenti
+                  sviluppati da apple
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning modify-button shadow-lg"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="iphone 15"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Terza Card -->
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+            <div class="card mb-4 shadow-lg border-info border-3">
               <img
-                src="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
-                data-original-src="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
-                data-alternative-src1="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src2="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
+                src="/img/6839827815.jpg"
+                data-original-src="/img/6839827815.jpg"
+                data-alternative-src1="/img/wp-1698228571476.webp"
+                data-alternative-src2="/img/wp-1698228511086.webp"
                 class="bd-placeholder-img card-img-top"
               />
               <div class="card-body">
-                <h5 class="card-title"></h5>
+                <h5 class="card-title">XIAOMI 14</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  xiaomi 14 è uno dei modelli di smartphone più recenti
+                  sviluppati da xiaomi
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning modify-button shadow-lg"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="xiaomi 14"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
                 </div>
               </div>
             </div>
@@ -296,123 +263,102 @@
         <div class="row g-3" id="card">
           <!-- Prima Card -->
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+            <div class="card shadow-lg border-info border-3">
               <img
-                src="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-original-src="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src1="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-alternative-src2="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
+                src="/img/wp-1698228511086.webp"
+                data-original-src="/img/wp-1698228511086.webp"
+                data-alternative-src1="/img/wp-1698228571476.webp"
+                data-alternative-src2="/img/6839827815.jpg"
                 class="bd-placeholder-img card-img-top"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
+                <h5 class="card-title">XIAOMI 14</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  xiaomi 14 è uno dei modelli di smartphone più recenti
+                  sviluppati da xiaomi
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning modify-button shadow-lg"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="xiaomi 14"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Seconda Card -->
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+            <div class="card shadow-lg border-info border-3">
               <img
-                src="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-original-src="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
-                data-alternative-src1="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src2="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
+                src="/img/s24 plus black.jpg"
+                data-original-src="/img/s24 plus black.jpg"
+                data-alternative-src1="/img/s24 plus 512gb lavender.jpg"
+                data-alternative-src2="/img/s24 yellow.jpg"
                 class="bd-placeholder-img card-img-top"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
+                <h5 class="card-title">SAMSUNG S24</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  samsung s24 è uno dei modelli di smartphone più recenti
+                  sviluppati da samsung
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning modify-button shadow-lg"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="samsung s24"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <!-- Terza Card -->
           <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+            <div class="card shadow-lg border-info border-3">
               <img
-                src="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
-                data-original-src="https://cdn-files.kimovil.com/default/0009/38/thumb_837245_default_big.jpg"
-                data-alternative-src1="https://darlingretail.com/cdn/shop/files/iPhone_15_Green_Pure_Back_iPhone_15_Green_Pure_Front_2up_Screen__WWEN_800x.jpg?v=1695103947"
-                data-alternative-src2="https://photo.yeppon.it/samsung-galaxy-s24-8/l-s24-amber-yellow-1705570642.jpg"
+                src="/img/iPhone_15_Yellow_Pure_Back_iPhone_15_Yellow_Pure_Front_2up_Screen__WWEN_600x.webp"
+                data-original-src="/img/iPhone_15_Yellow_Pure_Back_iPhone_15_Yellow_Pure_Front_2up_Screen__WWEN_600x.webp"
+                data-alternative-src1="/img/iPhone_15_Blue_Pure_Back_iPhone_15_Blue_Pure_Front_2up_Screen__WWEN_600x.webp"
+                data-alternative-src2="/img/iPhone_15_Black_Pure_Back_iPhone_15_Black_Pure_Front_2up_Screen__WWEN.webp"
                 class="bd-placeholder-img card-img-top"
               />
               <div class="card-body">
-                <h5 class="card-title">Lorem Ipsum</h5>
+                <h5 class="card-title">IPHONE 15</h5>
                 <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  iphone 15 è uno dei modelli di smartphone più recenti
+                  sviluppati da apple
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary modify-button"
-                    >
-                      MODIFICA
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary discover-button"
-                    >
-                      <a
-                        href="/info.html"
-                        style="text-decoration: none; color: inherit"
-                      >
-                        SCOPRI DI PIÙ
-                      </a>
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-md btn-outline-warning modify-button shadow-lg"
+                  >
+                    MODIFICA
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success shadow-lg btn-md show-details"
+                    data-product="iphone 15"
+                  >
+                    SCOPRI DI PIÙ
+                  </button>
                 </div>
               </div>
             </div>
@@ -421,7 +367,32 @@
       </div>
     </div>
 
-    <footer class="text-muted"></footer>
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mt-2">
+            <p class="">
+              &copy; 2024 Nome del tuo sito. Tutti i diritti riservati.
+            </p>
+          </div>
+          <div class="col-12">
+            <ul class="list-inline mb-2 tex">
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none"
+                  >Termini e condizioni</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none">Contattaci</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
